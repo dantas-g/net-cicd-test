@@ -22,7 +22,7 @@ namespace HelloWorld
         {
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Add("User-Agent", "AWS Lambda .Net Client");
-
+asdasdasd
             var msg = await client.GetStringAsync("http://checkip.amazonaws.com/").ConfigureAwait(continueOnCapturedContext:false);
 
             return msg.Replace("\n","");
